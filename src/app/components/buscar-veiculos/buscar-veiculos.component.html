@@ -1,0 +1,54 @@
+<div class="buscar-veiculo-container">
+    <h2>Buscar Veículo</h2>
+
+    <form (ngSubmit)="buscarPorId()" #formId="ngForm">
+        <div class="form-group">
+            <label for="veiculoId">Buscar por ID:</label>
+            <input
+                type="number"
+                id="veiculoId"
+                [(ngModel)]="veiculoId"
+                name="veiculoId"
+                class="form-control"
+                required
+            />
+        </div>
+        <button type="submit" class="btn btn-primary">Buscar por ID</button>
+    </form>
+    <form (ngSubmit)="buscarPorMarca()" #formMarca="ngForm">
+        <div class="form-group">
+            <label for="marca">Buscar por Marca:</label>
+            <input
+                type="text"
+                id="marca"
+                [(ngModel)]="marca"
+                name="marca"
+                class="form-control"
+                required
+            />
+        </div>
+        <button type="submit" class="btn btn-secondary">Buscar por Marca</button>
+    </form>
+    <div *ngIf="veiculos.length > 0 " class="veiculo-dados">
+        <h3>Veículos Encontrados:</h3>
+        <div *ngFor="let veiculo of veiculos" class="veiculo-card">
+            <p><strong>ID:</strong> {{veiculo.id}} </p>
+            <p><strong>Marca:</strong> {{veiculo.marca}} </p>
+            <p><strong>Modelo:</strong> {{veiculo.modelo}} </p>
+            <p><strong>Ano:</strong> {{veiculo.ano}} </p>
+            <p><strong>Descrição:</strong> {{veiculo.descricao}} </p> 
+            <td>
+                <carousel>
+                    <slide *ngFor="let image of veiculo.imagensUrl">
+                      <img [src]="image" [alt]="image" class="veiculo-imagem">
+                    </slide>
+                </carousel>
+            </td>   
+        </div>
+    </div>
+
+    <div *ngIf="errorMessage" class="alert alert-danger">
+        {{errorMessage}}
+    </div>
+
+</div>

@@ -1,0 +1,87 @@
+
+
+.home-container {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #C2EBFD;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.home-container h1 {
+    color: #343a40;
+    font-weight: 600;
+    font-size: 2.5rem; 
+    margin-bottom: 10px;
+}
+
+.home-container p {
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.home-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+.btn-warning {
+    background-color: #b92208;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel img{
+    border-radius: 15px;
+    width: 600px;
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .home-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+}
+  

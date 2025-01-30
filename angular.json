@@ -23,11 +23,19 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
-              }
+                "input": "public",
+                "output": "/public"
+              },
+              "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css",
+              "src\\app\\components\\home\\home.component.css",
+              "src\\app\\components\\listar-veiculos\\listar-veiculos.component.css",
+              "src\\app\\components\\editar-veiculos\\editar-veiculos.component.css",
+              "src\\app\\components\\buscar-veiculos\\buscar-veiculos.component.css",
+              "src\\app\\components\\adicionar-veiculos\\adicionar-veiculos.component.css"
             ],
             "scripts": []
           },

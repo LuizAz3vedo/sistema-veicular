@@ -1,0 +1,90 @@
+.listar-veiculos-container {
+    font-family: "Poppis", sans-serif;
+    margin: 30px auto;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.listar-veiculos-container h2 {
+    text-align: center;
+    color: #343a40;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.loading, .error, .no-data {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.loading p {
+    color: #007bff;
+}
+
+.error p {
+    color: #dc3545;
+}
+
+.no-data p {
+    color: #6c757d;
+}
+
+.veiculos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.veiculos-table th, .veiculos-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+
+/* #f4f4f4  */
+.veiculos-table th {
+    background-color: #f4f4f4;
+    color: #343a40;
+    font-weight: 600;
+}
+
+.veiculos-table tbody tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+.veiculos-table tbody tr:hover {
+    background-color: #c1dcb3;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+.veiculos-table td {
+    color: #495057;
+}
+
+.veiculo-imagem {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+    .veiculos-table th, .veiculos-table td {
+        padding: 8px 10px;
+        font-size: 1rem;
+    }
+}
+
+

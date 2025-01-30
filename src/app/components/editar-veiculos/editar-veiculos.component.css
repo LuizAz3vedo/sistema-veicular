@@ -1,0 +1,143 @@
+.listar-veiculos-container {
+  font-family: "Poppins", sans-serif;
+  margin: 30px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4 12px rgba(0, 0, 0, 0.1);
+}
+
+.listar-veiculos-container h2 {
+  text-align: center;
+  color: #343a40;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.listar-veiculos-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.listar-veiculos-container li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.listar-veiculos-container li:hover {
+    background-color: #e9ecef;
+}
+
+.listar-veiculos-container ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #495057;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    outline: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    
+}
+
+.alert {
+    padding: 15px;
+    border: 1px solid #c3e6cb;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 8px;
+    font-size: 1rem;
+
+}
+
+.alert-danger {
+    border-color: #f5c6cb;
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-success {
+    border-color: #c3e6cb;
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.excluir-icone {
+    color: #dc3545;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.excluir-icone:hover {
+    transform: scale(1.6);
+}
+
+@media (max-width: 768px) {
+    .form-control {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,93 @@
+<div class="adicionar-veiculo-container">
+    <h2>Adicionar Veículo</h2>
+    <form (ngSubmit)="adicionarVeiculo()" #form="ngForm">
+        <div class="form-group">
+            <label for="marca">Marca:</label>
+            <input
+                type="text"
+                id="marca"
+                [(ngModel)]="veiculo.marca"
+                name="marca"
+                class="form-control"
+                required
+                #marcaInput
+            />
+            <div *ngIf="mensagemErroCampo.marca" class="text-danger">
+                {{ mensagemErroCampo.marca }}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="modelo">Modelo:</label>
+            <input
+                type="text"
+                id="modelo"
+                [(ngModel)]="veiculo.modelo"
+                name="modelo"
+                class="form-control"
+                required
+                #modeloInput
+            />
+            <div *ngIf="mensagemErroCampo.modelo" class="text-danger">
+                {{ mensagemErroCampo.modelo }}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ano">Ano:</label>
+            <input
+                type="number"
+                id="ano"
+                [(ngModel)]="veiculo.ano"
+                name="ano"
+                class="form-control"
+                min="1900"
+                max="2099"
+                required
+                #anoInput   
+            />
+            <div *ngIf="mensagemErroCampo.ano" class="text-danger">
+                {{ mensagemErroCampo.ano }}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="descricao">Descrição:</label>
+            <textarea
+                id="descricao"
+                [(ngModel)]="veiculo.descricao"
+                name="descricao"
+                class="form-control"
+                rows="3"
+                required
+                #descricaoInput
+            ></textarea>
+            <div *ngIf="mensagemErroCampo.descricao" class="text-danger">
+                {{ mensagemErroCampo.descricao }}
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="URL">Imagem do Veículo:</label>
+            <div *ngFor="let imagem of veiculo.imagensUrl; let i = index" class="image-input">
+                <input
+                    type="text"
+                    [(ngModel)]="veiculo.imagensUrl[i]"
+                    name='"imagemUrl" + i'
+                    class="form-control"
+                    placeholder="URL da imagem"
+                    required  
+                />
+                <button type="button" (click)="removerImagem(i)" class="btn btn-danger btn-sm">Remover</button>
+            </div>
+            <button type="button" (click)="adicionarImagem()" class="btn btn-add btn-sm">Adicionar</button>
+        </div>
+        
+        <button type="submit" class="btn btn-sucess">Adicionar Veículo</button>
+    </form>    
+
+    <div *ngIf="mensagemSucesso" class="alert alert-success" role="alert">
+        {{ mensagemSucesso }}
+    </div>
+
+    <div *ngIf="mensagemErro" class="alert alert-danger" role="alert">
+        {{ mensagemErro }}
+    </div>
+
+</div>

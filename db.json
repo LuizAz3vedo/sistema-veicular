@@ -1,0 +1,53 @@
+{
+  "veiculo": [
+    {
+      "id": "1",
+      "marca": "Toyota ",
+      "modelo": "Corolla",
+      "ano": "2020",
+      "descricao": "Sedan Confiável",
+      "imagensUrl": [
+        "https://images.unsplash.com/photo-1641721398002-f1de0d1ab16d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "
+      ]
+    },
+    {
+      "id": "2",
+      "marca": "Honda id 3",
+      "modelo": "Civic",
+      "ano": "2019",
+      "descricao": "Desempenho esportivo",
+      "imagensUrl": [
+        "https://images.unsplash.com/photo-1611396058741-1d570a4fcf95?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ]
+    },
+    {
+      "id": "3",
+      "marca": "Toyota 3",
+      "modelo": "cxxcx",
+      "ano": 1900,
+      "descricao": "Compacto premium"
+    },
+    {
+      "id": "4",
+      "marca": "Chevrolet id 6",
+      "modelo": "aaa",
+      "ano": "2018",
+      "descricao": "Compacto, econômico"
+    },
+    {
+      "id": "5",
+      "marca": "Chevrolet id 2",
+      "modelo": "Onix",
+      "ano": "2022",
+      "descricao": "Compacto, econômico"
+    },
+    {
+      "id": "6",
+      "marca": "mustang",
+      "modelo": "antigo",
+      "ano": 1980,
+      "descricao": "teste img",
+      "imagensUrl": []
+    }
+  ]
+}

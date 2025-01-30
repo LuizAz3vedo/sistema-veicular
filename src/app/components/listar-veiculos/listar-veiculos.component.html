@@ -1,0 +1,47 @@
+<div class="listar-veiculos-container">
+    <h2>Lista de Veículos</h2>
+    <div *ngIf="loading" class="loading">
+        <p>Carregando...</p>
+    </div>
+
+    <div *ngIf="errorMessage" class="error">
+        <p>{{ errorMessage }}</p>
+    </div>
+
+    <table *ngIf="!loading && veiculos.length > 0" class="veiculos-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Descrição</th>
+                <th>Imagens</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let veiculo of veiculos">
+                <td>{{ veiculo.id }}</td>
+                <td>{{ veiculo.marca}}</td>
+                <td>{{ veiculo.modelo}}</td>
+                <td>{{ veiculo.ano}}</td>
+                <td>{{ veiculo.descricao}}</td>
+                <td>
+                    <carousel>
+                        <slide *ngFor="let image of veiculo.imagensUrl">
+                          <img [src]="image" [alt]="image" class="veiculo-imagem">
+                        </slide>
+                    </carousel>
+                </td>
+            </tr>
+            
+        </tbody>
+
+    </table>
+
+    <p *ngIf="!loading && veiculos.length === 0 " class="no-data">
+        Nenhum veículo encontrado.
+    </p>
+    
+</div>
