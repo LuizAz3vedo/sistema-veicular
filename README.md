@@ -1,59 +1,44 @@
-# SistemaVeicular
+# Projeto CRUD de Veículos com Angular e JSON Server
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+Este projeto foi desenvolvido para ensinar conceitos básicos de Angular, incluindo a criação de um CRUD (Create, Read, Update, Delete) para gerenciar veículos. Além disso, o projeto inclui funcionalidades de acessibilidade, como a capacidade de aumentar e diminuir o tamanho da fonte, e utiliza o JSON Server para simular um banco de dados.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📋 Funcionalidades
 
-```bash
-ng serve
-```
+1. **Home Page**:
+   - Listagem de veículos cadastrados.
+   - Botões para adicionar, editar e excluir veículos.
+   - Campo de busca para filtrar veículos por nome, modelo ou outras propriedades.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+2. **Acessibilidade**:
+   - Botões para aumentar e diminuir o tamanho da fonte da página.
+   - Design responsivo para melhorar a experiência em diferentes dispositivos.
 
-## Code scaffolding
+3. **CRUD de Veículos**:
+   - **Create**: Adicionar novos veículos através de um formulário.
+   - **Read**: Listar todos os veículos cadastrados.
+   - **Update**: Editar informações de veículos existentes.
+   - **Delete**: Excluir veículos da lista.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+4. **JSON Server**:
+   - Simula um banco de dados RESTful para armazenar os dados dos veículos.
+   - Facilita a integração com o Angular para operações de CRUD.
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🛠️ Tecnologias Utilizadas
 
-```bash
-ng generate --help
-```
+- **Angular**: Framework front-end para construção da interface do usuário.
+- **JSON Server**: Simula uma API RESTful para armazenar e gerenciar dados.
+- **HTML/CSS/TypeScript**: Linguagens utilizadas para desenvolver a aplicação.
+- **Angular Material**: Biblioteca de componentes UI para melhorar o design e a usabilidade.
 
-## Building
+---
 
-To build the project run:
+### Pré-requisitos
 
-```bash
-ng build
-```
+- Node.js instalado (versão 14 ou superior).
+- Angular CLI instalado (`npm install -g @angular/cli`).
+- JSON Server instalado (`npm install -g json-server`).
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
